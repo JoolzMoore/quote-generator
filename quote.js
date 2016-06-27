@@ -5,7 +5,11 @@ var quoteDisplay = document.querySelector(".quoteDisplay");
 console.log(quoteDisplay);*/
 
 function randomQuote( ){
- var randomNumber = Math.floor(Math.random()*array.length)
-console.log (randomNumber);
+var randomNumber = Math.floor(Math.random()*array.length)
+return randomNumber;
 }
 randomQuote()
+
+button.addEventListener("click",function(){
+  quoteDisplay.innerHTML = array[randomQuote()]
+});
