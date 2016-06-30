@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+button {
+  font-size: 1.125em;
+}
+
+body {
+  display: flex;
+  background-image: url("book_image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-attachment: fixed;
+  margin:auto;
+}
