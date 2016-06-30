@@ -1,13 +1,9 @@
-h1 {
-  text-align: center;
-  margin: 0 auto;
-}
-
-button {
-  font-size: 1.125em;
+*{
+  box-sizing: border-box;
 }
 
 body {
+  /* Back ground image */
   display: flex;
   background-image: url("book_image.jpg");
   background-size: cover;
@@ -15,4 +11,24 @@ body {
   background-position: 100% 100%;
   background-attachment: fixed;
   margin:auto;
+  /* Font for the page*/
+  font-family: 'Noto Sans', sans-serif;
 }
+
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+button {
+  text-align: center;
+  margin: 10px 10px;
+  font-size: 1em;
+}
+
+p{
+  margin: 0 auto;
+  text-align: center;
+}
+
