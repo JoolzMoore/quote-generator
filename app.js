@@ -4,6 +4,7 @@ var display = document.querySelector(".quoteDisplay");
 var codeBtn = document.querySelector(".codeBtn");
 var norrisBtn = document.querySelector(".norrisBtn");
 var gotBtn = document.querySelector(".gotBtn");
+var quote = document.querySelector(".fa");
 
 //CODING QUOTES
 codeBtn.addEventListener("click",function(){
