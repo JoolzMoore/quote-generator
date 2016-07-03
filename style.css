@@ -44,6 +44,7 @@ p{
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .quoteDisplay{
   display: flex;
   text-align: center;
@@ -51,4 +52,18 @@ p{
   font-size: 1.5em;
   color:#c61331;
   margin-top: 15px;
+}
+
+/* Twitter Button*/
+a {
+  display: block;
+  text-align: center;
+  font-size: 1.25em;
+  border: 1px solid #4099ff;
+  border-radius: 5%;
+  background: #4099ff;
+  width: 90px;
+  color: white;
+  text-decoration: none;
+  margin: 15px auto;
 }

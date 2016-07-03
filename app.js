@@ -5,6 +5,8 @@ var codeBtn = document.querySelector(".codeBtn");
 var norrisBtn = document.querySelector(".norrisBtn");
 var gotBtn = document.querySelector(".gotBtn");
 var quote = document.querySelector(".fa");
+var currentQuote = '';
+
 
 //CODING QUOTES
 codeBtn.addEventListener("click",function(){
@@ -13,7 +15,9 @@ codeBtn.addEventListener("click",function(){
 		method: "GET",
 		dataType: 'json',
 		success : function (data) {
-			display.innerHTML = (data["quote"] + " - " + data["author"]);
+			currentQuote = data["quote"] + " - " + data["author"]
+			display.innerHTML = currentQuote;
+			$('.tweet').attr('href', 'https://twitter.com/intent/tweet?text='+ currentQuote).attr('target', '_blank');
 		}
 	})
 });
@@ -26,7 +30,9 @@ gotBtn.addEventListener("click",function(){
 		method: "GET",
 		data: 'json',
 		success : function (data) {
-			display.innerHTML = (data["quote"] + " - " + data["character"]);
+			currentQuote = data["quote"] + " - " + data["character"];
+			display.innerHTML = currentQuote;
+			$('.tweet').attr('href', 'https://twitter.com/intent/tweet?text='+ currentQuote).attr('target', '_blank');
 		}
 	})
 });
@@ -40,13 +46,15 @@ norrisBtn.addEventListener("click",function(){
 		method: "GET",
 		dataTYPE: 'json',
 		success : function (data) {
-			display.innerHTML = (data["value"]["joke"]);
+			currentQuote = (data["value"]["joke"]);
+			display.innerHTML = currentQuote;
+			$('.tweet').attr('href', 'https://twitter.com/intent/tweet?text='+ currentQuote).attr('target', '_blank');
+
 		}
 	})
 });
 
-
-
-
+//twitter intents
+	$('.tweet').attr('href', 'https://twitter.com/intent/tweet?text='+"Quote Generator  - By Julia and Erwin").attr('target', '_blank');
 
 
